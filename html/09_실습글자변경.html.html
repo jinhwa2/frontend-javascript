@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>텍스트변경</title>
+  </head>
+  <body>
+    <!--무조건 p 태그이어야만 하는 것이 아님
+              h  pre 등 원하는 태그 작성 가능-->
+    <p id="글자">클릭해서 환영인사로 변경하세요.</p>
+    <button onclick="텍스트변경()">Click me</button>
+
+    <script>
+      //텍스트변경 기능만들기
+      //자바          public void 메서드명(){}
+      //자바스크립트는    funtion    기능명(){}
+      funtion 
+      function 텍스트변경() {
+        //inner = 내부, 내면의 ex) 이너티 이너나시
+        //innerText = 태그 안에 있는 글자들
+        const 글자선택 = document.getElementById("글자").innerText = "Hello, World";
+
+        
+        //const 글자변경하기 = 글자선택.innerText = "Hello, World";
+      }
+    </script>
+  </body>
+</html>
