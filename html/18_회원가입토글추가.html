@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>회원가입</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <label>이름 :</label>
+    <input type="text" id="user_name" required><br><br>
+    <label>이메일: </label>
+    <input type="email" id="user_email" required><br><br>
+    <label>비밀번호: </label>
+    <input type="password" id="user_pw" required><br><br>
+    <label>비밀번호 확인: </label>
+    <input type="password" id="user_pw_comfirm" required><br><br>
+    
+    <textarea id="토글박스" rows="6" cols="20" required>이용약관입니다.잘읽어보고 잘회원가입하세요.피해보상은 하지않아요</textarea>
+   <br>
+    <button onclick="이름이메일확인()">이름이메일확인</button>
+   
+    <button onclick="보이기숨기기()">이용약관버튼</button>
+    
+    <script>
+      
+      function 이름이메일확인(){
+        const 이름값 = document.getElementById("user_name");
+        const 이메일값 = document.getElementById("user_email");
+         const 이름 = 이름값.value;
+         const 이메일 = 이메일값.value;
+
+         if(이름 == "고영희" && 이메일 == "ko@kh.kh") {
+            alert("이미 가입된 회원입니다.")
+         }else {
+          alert("가입하지 않은 회원입니다.")
+         }
+      }
+
+
+      function 보이기숨기기() {
+        const 박스 = document.getElementById("토글박스");
+        if(박스.classList.contains("hidden")) {
+           박스.classList.remove("hidden");
+        } else {
+          박스.classList.add("hidden");
+        }
+      }
+
+
+    </script>
+  </body>
+</html>

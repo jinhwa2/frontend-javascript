@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>실습문제</title>
+    <style>
+      button {
+        width: 30%;
+        text-align: left;
+        padding: 10px;
+      }
+      .hidden {
+        display: none;
+      }
+      ul {
+        list-style-type: none;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>점심 메뉴 고르기</h1>
+    
+      <h3>메뉴리스트</h3>
+      
+       <button onclick="showSubMenu('중식')">중식</button><br>
+       <button onclick="showSubMenu('한식')">한식</button><br>
+       <button onclick="showSubMenu('일식')">일식</button><br>
+      
+       <div id="submenu" class="hedden"> 
+        <h2 id="submenu-title"></h2>
+        <ul id="submenu-list"></ul>
+
+    </div>
+    
+    <script>
+      function showSubMenu(menu) {
+          const submenu = document.getElementById("submenu");
+          const submenuTitle = document.getElementById("submenu-title");
+          const submenuList = document.getElementById("submenu-list");
+
+          submenuTitle.textContent = menu + " 메뉴";
+            submenuList.innerHTML = ""
+
+          switch(menu) {
+            case'중식':
+            submenuList.innerHTML = "<li>짜장면</li><li>짬뽕</li><li>탕수육</li>";
+            break;
+            case '한식':
+            submenuList.innerHTML = "<li>비빔밥</li><li>된장찌개</li><li>불고기</li>";
+            break;
+            case "일식":
+            submenuList.innerHTML = "<li>초밥</li><li>라멘</li><li>돈까스</li>";
+            break;
+            default:
+            break;
+          }
+          submenu.classList.remove("hidden");
+        }
+    </script>
+
+  </body>
+</html>
