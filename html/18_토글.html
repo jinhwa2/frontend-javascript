@@ -3,31 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>토글 toggle</title>
-    <style>
-      #토글박스 {
-        width: 200px;
-        height: 200px;
-        background-color: aliceblue;
-        border: 2px solid lightpink;
-        text-align: center;
-        line-height: 200px;
-      }
-      button {
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        margin: 10px;
-        background-color: antiquewhite;
-      }
-      button:hover {
-        background-color: black;
-        color: white;
-      }
-      .hidden {
-      
-       display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="../css/18_토글.css">
+     
+     </link>
   </head>
   <body>
    
@@ -36,15 +14,8 @@
 
     <button onclick="보이기숨기기()">토글 클릭하기</button>
     <!--button을 사용하지 않고 한번에 끝낼 때 사용-->
-    <script>
-     function 보이기숨기기(){
-      const 박스 = document.getElementById("토글박스");
-      if(박스.classList.contains("hidden")) {
-        박스.classList.remove("hidden");
-      }else {
-        박스.classList.add("hidden");
-      }
-     }
+    <script src="../js/18_토글.js">
+     
     </script>
   </body>
 </html>

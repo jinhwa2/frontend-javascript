@@ -56,7 +56,7 @@
       function 메세지보이기(message, sender) {
         const chatbox = document.getElementById("chat-box");
         const messageElement = document.createElement("div");
-
+        
         messageElement.classList.add("message", sender + "-message");
         messageElement.textContent = message;
         chatbox.appendChild(messageElement);
