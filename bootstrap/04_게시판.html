@@ -26,10 +26,6 @@
       /* 마우스 a 태그 위에 올리면 아래에 줄이 생김 */
       text-decoration: underline;
     }
-    .nabar-brand {
-      color: white;
-      text-decoration: none;
-    }
   </style>
   </head>
   <body>
@@ -48,67 +44,48 @@
             <a class="nav-link" href="#">게시판</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="이미지갤러리.html">이미지 갤러리</a>
+            <a class="nav-link" href="03_이미지갤러리.html">이미지 갤러리</a>
           </li>
 
         </ul>
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row mt-4">
-        <h1>이미지 갤러리</h1>
+    <div class="container mt-5">
+      <h2>게시판</h2>
+      <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-primary">새 글 작성</button>
       </div>
-      <!--첫번째 가로줄 힐링이 자기소개-->
-      <div class="row mt-5">
-        <div class="col-4">
-        <img src="healing.jpg" class="img-fluid img-thumgnail">
-      </div>
-      <div class="col-8">
-        <h3>힐링이</h3>
-        <p>
-          중성<br>
-          츄르를 좋아합니다.
-        </p>
-      </div>
-    </div>
-    <!--row 가로 3번째 줄 호감이 자기소개 시간-->
-    <div class="row mt-5">
-      <div class="col-6">
-       <h3>호감이</h3>
-        <p>래브라도 리트리버 <br>
-          물을 싫어합니다.
-        </p>
-      </div>
-      <div class="col-6">
-        <img src="hogam.jpg" class="img-fluid rounded">
-      </div>
-      </div>
-    
-    <!-- row  세번째줄 말리 자랑하기 자기소개 시간-->
-    <div class="row mt-5">
-      <div class="col-3">
-        <img src="marley.jpg" class="img-fluid rounded-circle">
-        </div>
-        <div class="col-3">
-          <h3>말리</h3>
-          <p>
-            말리는 5월 23일 생일이었다.<br>
-            산책을 좋아합니다.
-          </p>
-        </div>
-        <div class="col-2">
-          <img src="lovelyMarley.jpg" class="img-fluid rounded-pill">
-        </div>
-        <div class="col-2">
-          <img src="pajamaMarley.jpg" class="img-fluid rounded">
-        </div>
-        <div class="col-2">
-          <img src="swimmingPartyMarley.jpg" class="img-fluid rounded">
-        </div>
-      </div>
-    </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>첫 번째 게시글</td>
+            <td>홍길동</td>
+            <td>2024-05-01</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>두 번째 게시글</td>
+            <td>김철수</td>
+            <td>2024-05-01</td>
+          </tr>
+          <th>3</th>
+          <td>세 번째 게시글</td>
+          <td>오영희</td>
+          <td>2024-05-02</td>
+        </tbody>
+      </table>
 
+    </div>
     <!--푸터-->
     <footer class="footer mt-5">
       <div class="container text-center">
