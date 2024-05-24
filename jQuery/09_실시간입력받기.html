@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>실시간입력받기</title>
+    <title>실시간 입력받기</title>
     <script src="http://code.jquery.com/jquery-3.7.1.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("#인풋필드").on("input", function(){
-        $("#텍스트보여주기").text($(this).val());
-        //val value 값
+    <script>
+      $(document).ready(function(){
+        $("#인풋필드").on("input",function(){
+          $("#텍스트보여주기").text($(this).val());
+          //val value 값
+        })
       })
-    })
-  </script>
+    </script>
   </head>
   <body>
 
-    <input type="text" id="인풋필드" placeholder="텍스트를 입력하세요">
+    <input type="text" id="인풋필드" placeholder="텍스트를 입력하세요.">
     <p>입력한 텍스트 : <span id="텍스트보여주기"></span></p>
-    </body>
+  </body>
 </html>
