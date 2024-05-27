@@ -10,18 +10,15 @@
     crossorigin="anonymous"
   />
   <style>
-    .nabar-brand {
-      color: white;
-      text-decoration: none;
-    }
-    .footer {
-      background-color: #212529;
-      color: white;
-      padding: 1rem; /*16px*/
-      position: relative;
-      width: 100%;
-      bottom: 0;
-    }
+  
+  .footer {
+          background-color: #212529;
+          color: white;
+          padding: 1rem 0; /* 16px */
+          position: relative;
+          width: 100%;
+          bottom: 0;
+        }
     .footer a {
       color: white;
       text-decoration: none;
@@ -30,18 +27,12 @@
       /* 마우스 a 태그 위에 올리면 아래에 줄이 생김 */
       text-decoration: underline;
     }
-    input{
-      width: 100%;
-      border: 1px solid rgb(235, 230, 230) ;
-    }
+    
 
-    textarea{
-      width: 100%;
-      border: 1px solid rgb(235, 230, 230) ;
-    }
+    
   </style>
   </head>
-  <body>
+  <div>
      <!--네비게이션 바-->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="nabar-brand" href="#">브랜드위치</a>
@@ -53,7 +44,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="#">게시판</a>
           </li>
           <li class="nav-item">
@@ -65,33 +56,38 @@
     </nav>
     
     <div class="container mb-5">
-      <h2 class="mb-4">글작성</h2>
+      <h2 class="mb-4">글 작성</h2>
       <form>
-        <div class="mb-3">
-      <label class="form-laber" required>제목</label><br>
-      <input type="text" class="form-control" >
-      <br>
-      <div class="mb-3">
-      <label class="form-laber">작성자</label><br>
-      <input type="text" class="form-control"><br>
-      <div class="mb-3">
-      <label class="form-laber">내용</label><br>
-      <textarea rows="5"></textarea><br>
-      <button class="btn btn-dark">작성</button>
-    </div>
-      </div>
+          <div class="mb-3">
+              <label class="form-label">제목</label>
+              <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+              <label class="form-label">작성자</label>
+              <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+              <label class="form-label">내용</label>
+              <textarea type="text" class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">작성</button>
+      </form>
+
+
+
+  </div>
+      
        <!--푸터-->
     <footer class="footer mt-5">
       <div class="container text-center">
         <p>&copy; 2024 브랜드명. All Ringts Reserved</p>
-        <p>
-          <a href="#">개인정보처리방침</a> | <a href="#">이용약관</a>
+        <p><a href="#">개인정보처리방침</a> | <a href="#">이용약관</a>
         </p>
       </div>
 
     </footer>
  
-    </form>
+    
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
