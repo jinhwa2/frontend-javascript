@@ -45,7 +45,7 @@
             if (file) {
               //가져온 파일을 읽기위해 JS 있는 기능 FileReader 가져오기
               const 파일읽기 = new FileReader();
-              // onlead => FileReader로 원하는 파일이 읽혔을 때 기능 실행
+              // onload => FileReader로 원하는 파일이 읽혔을 때 기능 실행
               // 만약에 파일읽기가 안되면 onload 기능 자체가 실행되지 않음
               파일읽기.onload = function(e) {
                 // #이미지보이기 = id 이름이 이미지보이기 인 태그를 선택
