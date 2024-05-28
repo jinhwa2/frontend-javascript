@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>회원가입결과</title>
+    <!--jQuery 가져오기 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!--style에 작성한 css를 30_회원가입.css로 코드 옮겨준 후 link로 스타일 가져오기-->
+    <link href="30_회원가입.css" rel="stylesheet">
+    <style>
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px white;
+        text-align: center;
+      }
+
+      h1{
+        color: yellowgreen;
+      }
+
+      p{
+        font-size: 18px;
+        color: #333;
+      }
+
+      span{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>회원가입 완료되신 것을 환영합니다.</h1>
+    <p>이름 : <span id="resultName"></span></p>
+    <p>나이 : <span id="resultAge"></span></p>
+    <p>성별 : <span id="resultGender"></span></p>
+    <p>아이디 : <span id="resultId"></span></p>
+  </div>
+  </body>
+  <script>
+    $(document).ready(function(){
+      //url 인터넷 주소 이름 나이 아이디 같이 들어와서 사람들한테 회원가입에 대한 결과 보여주기
+      //file:///C:/Users/user1/frontend-workspace/javascript/html/30_회원가입결과보기.html?
+      //window.location.search =&signName=ghdrlfehd&signAge=40&signId=hong
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get("signName");
+      $("#resultName").text(name);
+
+      const age = urlParams.get("signAge");
+      $("#resultAge").text(age);
+      
+      const id = urlParams.get("signId");
+      $("#resultId").text(id);
+    })
+  </script>
+</html>
